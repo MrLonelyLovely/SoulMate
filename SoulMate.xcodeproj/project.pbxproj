@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		344BD2862417B88F004B788A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344BD2842417B88F004B788A /* Main.storyboard */; };
 		344BD2882417B894004B788A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344BD2872417B894004B788A /* Assets.xcassets */; };
 		344BD28B2417B894004B788A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344BD2892417B894004B788A /* LaunchScreen.storyboard */; };
+		344BD2932417BC42004B788A /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 344BD2922417BC42004B788A /* podfile */; };
+		346752C8241CA5C2004B9357 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346752C7241CA5C2004B9357 /* MyTabBarController.swift */; };
+		34D73B8B241D44AF00A30646 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D73B8A241D44AF00A30646 /* Constants.swift */; };
+		34D73B8E241D451C00A30646 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D73B8D241D451C00A30646 /* Utilities.swift */; };
+		34D73B90241D4D6100A30646 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D73B8F241D4D6100A30646 /* GuideVC.swift */; };
+		34D73B92241D4D7700A30646 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D73B91241D4D7700A30646 /* SignUpVC.swift */; };
+		34D73B94241D4D8500A30646 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D73B93241D4D8500A30646 /* LoginVC.swift */; };
+		34D73B97241D511E00A30646 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 34D73B96241D511E00A30646 /* loginbg.mp4 */; };
+		34D73BA1241E2FA600A30646 /* MatchCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D73BA0241E2FA600A30646 /* MatchCollectionVC.swift */; };
+		6D3AFFFEB1604C467E3CFB38 /* Pods_SoulMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8B144F01EB1590C04A372 /* Pods_SoulMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,18 @@
 		344BD2872417B894004B788A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344BD28A2417B894004B788A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344BD28C2417B894004B788A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344BD2922417BC42004B788A /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		346752C7241CA5C2004B9357 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		34D73B8A241D44AF00A30646 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		34D73B8D241D451C00A30646 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		34D73B8F241D4D6100A30646 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		34D73B91241D4D7700A30646 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		34D73B93241D4D8500A30646 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		34D73B96241D511E00A30646 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
+		34D73BA0241E2FA600A30646 /* MatchCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollectionVC.swift; sourceTree = "<group>"; };
+		65F8B144F01EB1590C04A372 /* Pods_SoulMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82F161B4FD2D08F21BD5F60 /* Pods-SoulMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMate.debug.xcconfig"; path = "Target Support Files/Pods-SoulMate/Pods-SoulMate.debug.xcconfig"; sourceTree = "<group>"; };
+		CCAACD3DFB77C411ABC66648 /* Pods-SoulMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMate.release.xcconfig"; path = "Target Support Files/Pods-SoulMate/Pods-SoulMate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3AFFFEB1604C467E3CFB38 /* Pods_SoulMate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3361864CA40BA02E56E31E85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A82F161B4FD2D08F21BD5F60 /* Pods-SoulMate.debug.xcconfig */,
+				CCAACD3DFB77C411ABC66648 /* Pods-SoulMate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		344BD2722417B88F004B788A = {
 			isa = PBXGroup;
 			children = (
+				344BD2922417BC42004B788A /* podfile */,
 				344BD27D2417B88F004B788A /* SoulMate */,
 				344BD27C2417B88F004B788A /* Products */,
+				3361864CA40BA02E56E31E85 /* Pods */,
+				603FBC282431C16E24590018 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +93,53 @@
 			children = (
 				344BD27E2417B88F004B788A /* AppDelegate.swift */,
 				344BD2802417B88F004B788A /* SceneDelegate.swift */,
-				344BD2822417B88F004B788A /* ViewController.swift */,
+				34D73B95241D511300A30646 /* Video */,
+				34D73B85241D445C00A30646 /* Helpers */,
+				34BBEF9D2418989F00AC9DFF /* View Controllers */,
 				344BD2842417B88F004B788A /* Main.storyboard */,
 				344BD2872417B894004B788A /* Assets.xcassets */,
 				344BD2892417B894004B788A /* LaunchScreen.storyboard */,
 				344BD28C2417B894004B788A /* Info.plist */,
 			);
 			path = SoulMate;
+			sourceTree = "<group>";
+		};
+		34BBEF9D2418989F00AC9DFF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				344BD2822417B88F004B788A /* ViewController.swift */,
+				346752C7241CA5C2004B9357 /* MyTabBarController.swift */,
+				34D73B8F241D4D6100A30646 /* GuideVC.swift */,
+				34D73B93241D4D8500A30646 /* LoginVC.swift */,
+				34D73B91241D4D7700A30646 /* SignUpVC.swift */,
+				34D73BA0241E2FA600A30646 /* MatchCollectionVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		34D73B85241D445C00A30646 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				34D73B8A241D44AF00A30646 /* Constants.swift */,
+				34D73B8D241D451C00A30646 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		34D73B95241D511300A30646 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				34D73B96241D511E00A30646 /* loginbg.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		603FBC282431C16E24590018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F8B144F01EB1590C04A372 /* Pods_SoulMate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344BD28F2417B894004B788A /* Build configuration list for PBXNativeTarget "SoulMate" */;
 			buildPhases = (
+				C166376123D0C07EE9C2DD23 /* [CP] Check Pods Manifest.lock */,
 				344BD2772417B88F004B788A /* Sources */,
 				344BD2782417B88F004B788A /* Frameworks */,
 				344BD2792417B88F004B788A /* Resources */,
+				5A828D60CE38AA5D25AAC157 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +203,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				344BD28B2417B894004B788A /* LaunchScreen.storyboard in Resources */,
+				34D73B97241D511E00A30646 /* loginbg.mp4 in Resources */,
 				344BD2882417B894004B788A /* Assets.xcassets in Resources */,
+				344BD2932417BC42004B788A /* podfile in Resources */,
 				344BD2862417B88F004B788A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A828D60CE38AA5D25AAC157 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMate/Pods-SoulMate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMate/Pods-SoulMate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMate/Pods-SoulMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C166376123D0C07EE9C2DD23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoulMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		344BD2772417B88F004B788A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D73BA1241E2FA600A30646 /* MatchCollectionVC.swift in Sources */,
+				34D73B94241D4D8500A30646 /* LoginVC.swift in Sources */,
 				344BD2832417B88F004B788A /* ViewController.swift in Sources */,
 				344BD27F2417B88F004B788A /* AppDelegate.swift in Sources */,
 				344BD2812417B88F004B788A /* SceneDelegate.swift in Sources */,
+				34D73B90241D4D6100A30646 /* GuideVC.swift in Sources */,
+				34D73B8B241D44AF00A30646 /* Constants.swift in Sources */,
+				34D73B8E241D451C00A30646 /* Utilities.swift in Sources */,
+				34D73B92241D4D7700A30646 /* SignUpVC.swift in Sources */,
+				346752C8241CA5C2004B9357 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		344BD2902417B894004B788A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82F161B4FD2D08F21BD5F60 /* Pods-SoulMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +429,7 @@
 		};
 		344BD2912417B894004B788A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCAACD3DFB77C411ABC66648 /* Pods-SoulMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

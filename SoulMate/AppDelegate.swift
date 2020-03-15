@@ -7,14 +7,37 @@
 //
 
 import UIKit
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let configuration = LCApplication.Configuration(
+            customizedServers: [
+                .api("https://rgtda0b8.lc-cn-n1-shared.com")
+//                .engine("https://xxx.example.com"),
+//                .push("https://xxx.example.com"),
+//                .rtm("https://xxx.example.com")
+            ]
+        )
+        do {
+            try LCApplication.default.set(
+                id: "RGTda0b89zavbH8nfI8Kvtr8-gzGzoHsz",
+                key: "ornDARJFOHVXhr2EcM9D358g",
+                configuration: configuration
+            )
+        } catch {
+            fatalError("(error)")
+        }
+
+        
+        LCApplication.logLevel = .all
+        
+        UITabBar.appearance().tintColor = UIColor(red: 48/255, green: 173/255, blue: 99/255, alpha: 1.0)
+//        UITabBar.appearance().barTintColor = UIColor(red: 48/255, green: 173/255, blue: 99/255, alpha: 1.0)
+        
         return true
     }
 
@@ -35,3 +58,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/* 失败的代码
+    var window: UIWindow?
+    
+    func checkLogedinOrNot() {
+        let userSessionToken:String? = UserDefaults.standard.string(forKey: "currentUserSessionToken")
+        if userSessionToken != nil {
+            transitiontoHome()
+        } else {
+            transitiontoGuidePage()
+        }
+    }
+
+    func transitiontoHome() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeTabBarController = storyboard.instantiateViewController(withIdentifier: "HomeTabBarController") as! MyTabBarController
+        self.window?.rootViewController = homeTabBarController
+        self.window?.makeKeyAndVisible()
+    }
+
+    func transitiontoGuidePage() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let guideVC = storyboard.instantiateViewController(withIdentifier: "GuideVC") as! GuideVC
+        self.window?.rootViewController = guideVC
+        self.window?.makeKeyAndVisible()
+    }
+*/
