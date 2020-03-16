@@ -1,60 +1,60 @@
 //
-//  MatchCollectionVC.swift
+//  MyDetailPageCVC.swift
 //  SoulMate
 //
-//  Created by Apui on 2020/3/15.
+//  Created by Apui on 2020/3/16.
 //  Copyright © 2020 陈沛. All rights reserved.
 //
 
 import UIKit
-import LeanCloud
 
-class MatchCollectionVC: UICollectionViewController {
+private let reuseIdentifier = "Cell"
 
-    let name: [String] = ["usa","china","uk","japan","mexico","india"]
-    
+class MyDetailPageCVC: UICollectionViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+
+        // Register cell classes
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
+        // Do any additional setup after loading the view.
     }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+    }
+    */
 
     // MARK: UICollectionViewDataSource
 
-    //一定不能设置为0，为0会什么都不显示
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return name.count
+        // #warning Incomplete implementation, return the number of items
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-//        var cell = UICollectionViewCell()
-//
-//        // Configure the cell
-//        if let matchCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchCell", for: indexPath)  as? MatchCollectionViewCell {
-//
-//            matchCell.configure(with: name[indexPath.row])
-//
-//            cell = matchCell
-//        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchCell", for: indexPath)  as! MatchCollectionViewCell
-        
-        cell.configure(with: name[indexPath.row])
-        
+        // Configure the cell
+    
         return cell
     }
 
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected Contry: \(name[indexPath.row])")
-    }
-    
     // MARK: UICollectionViewDelegate
 
     /*

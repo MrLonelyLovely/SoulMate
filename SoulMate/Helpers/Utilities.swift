@@ -43,4 +43,13 @@ class Utilities {
         button.tintColor = UIColor.black
     }
     
+    static func circleTheImageView(_ img:UIImageView) {
+        
+        //将头像框设置为圆形
+        //将视图的矩形圆角值设置为自身宽度的一半，便变成圆形了
+        img.layer.cornerRadius = img.frame.width / 2
+        //裁剪掉多余的部分
+        img.clipsToBounds = true
+    }
+    
 }

@@ -18,12 +18,6 @@ class MyTabBarController: UITabBarController {
     }
     
     
-//    override func viewWillAppear(_ animated: Bool) {
-//
-//    }
-    
-    
-    
 }
     
     
